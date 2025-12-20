@@ -27,13 +27,38 @@
             align-items: center;
         }
         
-        .logo { font-size: 1.5rem; font-weight: 700; color: #667eea; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: #000000; }
+        
+        .hero-headline {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            color: #000000;
+        }
+        
+        .hero-headline .text-primary {
+            color: #1f9369;
+            display: block;
+        }
+        
+        @media (min-width: 1024px) {
+            .hero-headline {
+                font-size: 3.75rem;
+            }
+        }
+        
+        @media (min-width: 1280px) {
+            .hero-headline {
+                font-size: 4.5rem;
+            }
+        }
         
         .hero {
             padding: 80px 20px;
             text-align: center;
-            background: linear-gradient(135deg, #2e9b03cc 0%, #429b5f 100%);
-            color: white;
+            background: #f7fafc;
         }
         
         .hero h1 {
@@ -41,15 +66,22 @@
             margin-bottom: 20px;
             font-weight: 700;
             line-height: 1.2;
+            color: #1f9369;
         }
         
         .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 40px;
-            opacity: 0.95;
-            max-width: 800px;
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            max-width: 42rem;
             margin-left: auto;
             margin-right: auto;
+            color: #6b7280;
+        }
+        
+        @media (min-width: 1024px) {
+            .hero p {
+                font-size: 1.25rem;
+            }
         }
         
         .features {
@@ -78,7 +110,7 @@
         }
         
         .feature-card h3 {
-            color: #667eea;
+            color: #000000;
             font-size: 1.5rem;
             margin-bottom: 15px;
         }
@@ -167,7 +199,7 @@
         
         button {
             width: 100%;
-            background: #667eea;
+            background: linear-gradient(135deg, #1f9369 0%, #0d6b4f 100%);
             color: white;
             padding: 16px;
             border: none;
@@ -179,7 +211,7 @@
         }
         
         button:hover {
-            background: #5a67d8;
+            background: linear-gradient(135deg, #0d6b4f 0%, #0a5540 100%);
         }
         
         .disclaimer {
@@ -191,7 +223,7 @@
         
         footer {
             padding: 40px 20px;
-            background: #2d3748;
+            background: linear-gradient(135deg, #1f9369 0%, #0d6b4f 100%);
             color: white;
             text-align: center;
         }
@@ -228,11 +260,11 @@
                     <p>As you build your formula, we check against 50+ known incompatibility patterns. Get immediate alerts about potential precipitation, pH conflicts, and oxidation risks.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>⚡ Automated Compliance</h3>
-                    <p>Instantly flag prohibited substances against MoCRA and EU regulations. Generate Product Information Files automatically.</p>
+                    <h3>✅ Automated Compliance</h3>
+                    <p>Built-in MoCRA, FDA, and EU compliance checks ensure your formulas meet global standards automatically.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🏭 Smart Tech Transfer</h3>
+                    <h3>📑 Smart Tech Transfer</h3>
                     <p>Generate standardized manufacturing specifications that ensure your formula scales correctly from lab to factory.</p>
                 </div>
             </div>
