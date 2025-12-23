@@ -84,6 +84,59 @@
             }
         }
         
+        .problem-section {
+            padding: 80px 20px;
+            background: white;
+        }
+        
+        .problem-section .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .problem-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #2d3748;
+            font-weight: 700;
+        }
+        
+        .problem-section p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+        
+        .problem-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+        }
+        
+        .problem-section li {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: #4a5568;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .problem-section li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1f9369;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .problem-section strong {
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
         .features {
             padding: 80px 20px;
             background: #f7fafc;
@@ -251,6 +304,21 @@
         </div>
     </section>
 
+    <section class="problem-section">
+        <div class="container">
+            <h3>If you're formulating with sustainable ingredients, you know some of the challenges:
+            </h3>
+            <ul>
+                <li>Phenoxyethanol alternatives that don't work above pH 6</li>
+                <li>Natural emulsifiers that don't provide enough viscosity</li>
+                <li>Plant oils that oxidize despite having tocopherol in the formula</li>
+                <li>pH-sensitive actives that degrade or cause irritation</li>
+                <li>Cationic polymers that precipitate with anionic surfactants</li>
+            </ul>
+            <p>Each compatibility mistake costs you 3-4 weeks and $5K-$15K in wasted ingredients and manufacturer time. And that's if you catch it early.</p>
+        </div>
+    </section>
+
     <section class="features">
         <div class="container">
             <h2>How StabiliMetric Pro Helps</h2>
@@ -278,11 +346,7 @@
                 <p>We're selecting 10 indie beauty brands to pilot StabiliMetric Pro in Q1 2026</p>
                 
                 <div class="form-card">
-                    <form name="waitlist" method="POST" netlify netlify-honeypot="bot-field">
-                        <input type="hidden" name="form-name" value="waitlist" />
-                        <p style="display: none;">
-                            <label>Don't fill this out: <input name="bot-field" /></label>
-                        </p>
+                    <form name="waitlist" method="POST" action="https://formspree.io/f/xaqwayye">
                         
                         <div class="form-group">
                             <label for="email">Work Email *</label>
